@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [DemoBlaze]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="SignUp(failed)">
+    <classes>
+      <class name="com.atmecs.demoblaze.SignUpTest">
+        <methods>
+          <include name="demoBlazeSignUp"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- com.atmecs.demoblaze.SignUpTest -->
+    </classes>
+  </test> <!-- SignUp(failed) -->
+  <test thread-count="5" name="LogIn(failed)">
+    <classes>
+      <class name="com.atmecs.demoblaze.LogInTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="demoBlazeLogIn"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.atmecs.demoblaze.LogInTest -->
+    </classes>
+  </test> <!-- LogIn(failed) -->
+  <test thread-count="5" name="AddToCart(failed)">
+    <classes>
+      <class name="com.atmecs.demoblaze.AddToCartTest">
+        <methods>
+          <include name="demoBlazeAddToCart"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- com.atmecs.demoblaze.AddToCartTest -->
+    </classes>
+  </test> <!-- AddToCart(failed) -->
+  <test thread-count="5" name="VerifyCart(failed)">
+    <classes>
+      <class name="com.atmecs.demoblaze.VerifyCartTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="demoBlazeVerifyCart"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- com.atmecs.demoblaze.VerifyCartTest -->
+    </classes>
+  </test> <!-- VerifyCart(failed) -->
+</suite> <!-- Failed suite [DemoBlaze] -->

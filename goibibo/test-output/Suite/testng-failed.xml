@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="SignUp(failed)">
+    <classes>
+      <class name="com.atmecs.goibibo.SignUpTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="booking"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- com.atmecs.goibibo.SignUpTest -->
+    </classes>
+  </test> <!-- SignUp(failed) -->
+  <test thread-count="5" name="booking(failed)">
+    <classes>
+      <class name="com.atmecs.goibibo.BookingTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="signup"/>
+          <include name="afterTest"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.atmecs.goibibo.BookingTest -->
+    </classes>
+  </test> <!-- booking(failed) -->
+</suite> <!-- Failed suite [Suite] -->

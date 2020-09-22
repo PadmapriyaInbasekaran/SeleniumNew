@@ -1,0 +1,20 @@
+package com.atmecs.chatbox;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+
+public class FileClass {
+	Properties prop ;
+	Properties prop1 ;
+public void fileClass() throws IOException
+{
+	
+	FileInputStream file = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\resources\\locators.properties");
+	prop = new Properties();
+	prop.load(file);
+	FileInputStream file1 = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\resources\\data.properties");
+	prop1 = new Properties();
+	prop1.load(file1);
+}
+}

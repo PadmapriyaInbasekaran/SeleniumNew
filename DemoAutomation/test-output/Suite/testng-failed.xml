@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Register(failed)">
+    <classes>
+      <class name="com.atmecs.demoautomation.RegisterTest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeTest"/>
+          <include name="register"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- com.atmecs.demoautomation.RegisterTest -->
+    </classes>
+  </test> <!-- Register(failed) -->
+  <test thread-count="5" name="FaceBook(failed)">
+    <classes>
+      <class name="com.atmecs.demoautomation.FaceBookTest">
+        <methods>
+          <include name="faceBook"/>
+          <include name="beforeTest"/>
+          <include name="beforeClass"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- com.atmecs.demoautomation.FaceBookTest -->
+    </classes>
+  </test> <!-- FaceBook(failed) -->
+  <test thread-count="5" name="LinkedIn(failed)">
+    <classes>
+      <class name="com.atmecs.demoautomation.LinkedInTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="linkedIn"/>
+          <include name="beforeClass"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.atmecs.demoautomation.LinkedInTest -->
+    </classes>
+  </test> <!-- LinkedIn(failed) -->
+  <test thread-count="5" name="YouTube(failed)">
+    <classes>
+      <class name="com.atmecs.demoautomation.YouTubeTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="beforeClass"/>
+          <include name="youTube"/>
+        </methods>
+      </class> <!-- com.atmecs.demoautomation.YouTubeTest -->
+    </classes>
+  </test> <!-- YouTube(failed) -->
+  <test thread-count="5" name="GooglePlus(failed)">
+    <classes>
+      <class name="com.atmecs.demoautomation.GooglePlusTest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="googlePlus"/>
+        </methods>
+      </class> <!-- com.atmecs.demoautomation.GooglePlusTest -->
+    </classes>
+  </test> <!-- GooglePlus(failed) -->
+  <test thread-count="5" name="Twitter(failed)">
+    <classes>
+      <class name="com.atmecs.demoautomation.TwitterTest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="twitter"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.atmecs.demoautomation.TwitterTest -->
+    </classes>
+  </test> <!-- Twitter(failed) -->
+</suite> <!-- Failed suite [Suite] -->

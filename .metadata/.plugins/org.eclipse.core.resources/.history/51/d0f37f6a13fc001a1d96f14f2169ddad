@@ -1,0 +1,31 @@
+package com.atmecs.chatbox;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class HelperClass  {
+WebDriver driver;
+Properties prop ;
+Properties prop1 ;
+public HelperClass(WebDriver driver)
+{
+	this.driver = driver;
+}
+
+public void selectElement(String xpath, String value) throws IOException
+{
+	FileInputStream file = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\resources\\locators.properties");
+	prop = new Properties();
+	prop.load(file);
+	FileInputStream file1 = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\resources\\data.properties");
+	prop1 = new Properties();
+	prop1.load(file1);
+	Select s=new Select(driver.findElement(By.xpath(xpath)));
+	s.selectByValue(value);
+}
+}

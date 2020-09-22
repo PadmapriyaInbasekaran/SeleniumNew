@@ -1,0 +1,16 @@
+package com.atmecs.chatbox;
+
+import java.io.FileInputStream;
+import java.util.Properties;
+
+public class FileClass {
+public void fileClass()
+{
+	FileInputStream file = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\resources\\locators.properties");
+	prop = new Properties();
+	prop.load(file);
+	FileInputStream file1 = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\resources\\data.properties");
+	prop1 = new Properties();
+	prop1.load(file1);
+}
+}
