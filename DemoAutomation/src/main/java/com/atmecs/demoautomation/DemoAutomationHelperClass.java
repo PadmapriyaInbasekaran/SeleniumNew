@@ -53,6 +53,7 @@ public class DemoAutomationHelperClass {
 	public void dropDownForLanguage(String xpath) throws InterruptedException
 	{
 		WebElement element1 =	driver.findElement(By.xpath(xpath));  
+		Thread.sleep(3000);
 		element1.click();
 		Thread.sleep(1000);
 		
@@ -60,7 +61,9 @@ public class DemoAutomationHelperClass {
 	public void selectYear(String id) throws InterruptedException
 	{
 		WebElement element3 = driver.findElement(By.id("id"));
+		Thread.sleep(1000);
 		element3.click();
+		Thread.sleep(1000);
 		for(int i=0;i<10;i++)
 		{
 			element3.sendKeys(Keys.ARROW_DOWN);
@@ -69,10 +72,12 @@ public class DemoAutomationHelperClass {
 		Thread.sleep(5000); 
 		
 	}
-	public void selectMonth(String id) throws InterruptedException
+	public void selectMonth(String xpath) throws InterruptedException
 	{
-		WebElement element4 = driver.findElement(By.xpath(id));
+		WebElement element4 = driver.findElement(By.xpath(xpath));
+		Thread.sleep(1000);
 		element4.click();
+		Thread.sleep(1000);
 		for(int i=0;i<5;i++)
 		{
 			element4.sendKeys(Keys.ARROW_DOWN);
@@ -84,7 +89,9 @@ public class DemoAutomationHelperClass {
 	public void selectDate(String id) throws InterruptedException
 	{
 		WebElement element5 = driver.findElement(By.id(id));
+		Thread.sleep(1000);
 		element5.click();
+		Thread.sleep(1000);
 		for(int i=0;i<10;i++)
 		{
 			element5.sendKeys(Keys.ARROW_DOWN);

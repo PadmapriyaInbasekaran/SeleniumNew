@@ -1,0 +1,48 @@
+package com.atmecs.goibibo;
+import java.io.IOException;
+import java.util.Iterator;
+import java.util.Set;
+import org.testng.annotations.Test;
+
+public class BookingTest extends BaseFile{
+	
+	
+	@Test
+	public void signup() throws InterruptedException, IOException
+	{
+		
+		Thread.sleep(2000);
+		HelperClass h3 =new HelperClass(driver);
+		h3.findElementById(locatorsProperty.getProperty("SignUp_id"));
+		Thread.sleep(5000);
+		driver.switchTo().frame("authiframe");
+		Thread.sleep(2000);
+		HelperClass h4 =new HelperClass(driver);
+		h4.findElementByXpath(locatorsProperty.getProperty("SignInToFB"));
+		Thread.sleep(2000);
+		String parent=driver.getWindowHandle();
+		Set<String>s=driver.getWindowHandles();
+		
+		Iterator<String> I1= s.iterator();
+		while(I1.hasNext())
+		{
+			String child_window=I1.next();
+			if(!parent.equals(child_window))
+			{
+				driver.switchTo().window(child_window);
+				HelperClass h = new HelperClass(driver);
+				h.sendValue(locatorsProperty.getProperty("FacebookUname"), dataProperty.getProperty("FacebookUname"));
+				h.sendValue(locatorsProperty.getProperty("FacebookPwd"), dataProperty.getProperty("FacebookPwd"));
+				HelperClass h1 = new HelperClass(driver);
+				h1.buttonClickableByName(locatorsProperty.getProperty("LoginButton"));
+				Thread.sleep(5000);
+				HelperClass h2 = new HelperClass(driver);
+				h2.getText(locatorsProperty.getProperty("ErrorMessage"));
+
+			}
+		}
+
+	}
+	
+	
+}

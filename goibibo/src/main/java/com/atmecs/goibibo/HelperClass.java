@@ -12,7 +12,7 @@ public class HelperClass {
 		this.driver = driver;
 	}
 	
-	public void sendValue(String xpath, String value)
+	public void sendKeys(String xpath, String value)
 	{
 		driver.findElement(By.id(xpath)).sendKeys(prop1.getProperty(value));
 	}

@@ -1,0 +1,13 @@
+package com.atmecs.chatbox;
+
+public class Constants {
+	/* Configuration properties*/
+	
+	public static final String CHROME_FILE = "./lib/chromedriver_win32/chromedriver.exe";
+
+	/* Locator properties*/
+	public static final String PAGE_FILE = "./src/test/resources/locators/page.properties";
+	public static final String VALIDATION_FILE = "./src/test/resources/locators/validation.properties";
+
+
+	}

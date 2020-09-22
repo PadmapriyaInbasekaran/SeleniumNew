@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DemoBlaze">
+<test name="SignUp">
+<classes>
+<class name="com.atmecs.demoblaze.SignUpTest"/>
+</classes>
+</test>
+<test name="LogIn">
+<classes>
+<class name="com.atmecs.demoblaze.LogInTest"/>
+</classes>
+</test>
+<test name="AddToCart">
+<classes>
+<class name="com.atmecs.demoblaze.AddToCartTest"/>
+</classes>
+</test>
+<test name="VerifyCart">
+<classes>
+<class name="com.atmecs.demoblaze.VerifyCartTest"/>
+</classes>
+</test>
+<!--  <test name="ContactUs">
+<classes>
+<class name="com.atmecs.demoblaze.ContactUsTest"/>
+</classes>
+</test> -->
+</suite>

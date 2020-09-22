@@ -4,31 +4,11 @@
   <test  name="Register">
     <classes>
       <class name="com.atmecs.demoautomation.RegisterTest"/>
-      </classes>
-      </test>
-      <test  name="FaceBook">
-    <classes>
-  <class name="com.atmecs.demoautomation.FaceBookTest"/>
-      </classes>
-      </test>
-      <test  name="LinkedIn">
-    <classes>
-       <class name="com.atmecs.demoautomation.LinkedInTest"/>
-      </classes>
-      </test>
-      <test  name="YouTube">
-    <classes>
+      <class name="com.atmecs.demoautomation.FaceBookTest"/>
+      <class name="com.atmecs.demoautomation.LinkedInTest"/>
       <class name="com.atmecs.demoautomation.YouTubeTest"/>
-      </classes>
-      </test>
-      <test  name="GooglePlus">
-    <classes>
       <class name="com.atmecs.demoautomation.GooglePlusTest"/>
+         <class name="com.atmecs.demoautomation.TwitterTest"/>
       </classes>
       </test>
-      <test  name="Twitter">
-    <classes>
-       <class name="com.atmecs.demoautomation.TwitterTest"/>
-      </classes>
-      </test>
-</suite> <!-- Suite -->
+      </suite> <!-- Suite -->

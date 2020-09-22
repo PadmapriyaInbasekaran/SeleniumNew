@@ -15,119 +15,57 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class RegisterTest  {
-	WebDriver driver;
-	WebElement txt;
-	FileInputStream file;
-	Properties prop;
-	FileInputStream file1;
-	Properties prop1;
-	@BeforeTest
-	public void beforeTest() throws InterruptedException, IOException
-	{
-		System.out.println("TEST EXECUTION BEGINS...");
-		file = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\resources\\locators\\locators.properties");
-		prop = new Properties();
-		prop.load(file);
-		file1 = new FileInputStream(System.getProperty("user.dir")+"\\src\\main\\resources\\data\\data.properties");
-		prop1 = new Properties();
-		prop1.load(file1);
-	}
-	@BeforeClass
-	public void beforeClass() throws InterruptedException
-	{
-		String chromeDriverPath = System.setProperty("user.dir",  "\\chromedriver.exe");
-		System.out.println(chromeDriverPath);
-		driver=new ChromeDriver();
-		driver.navigate().to("http://demo.automationtesting.in/Register.html");   
-		driver.manage().window().maximize();
-
-		System.out.println("Welcome...");
-
-	}
-	@Test
+public class RegisterTest extends BaseTest {
+		@Test
 	public void register() throws InterruptedException
 	{
 		driver.manage().timeouts().implicitlyWait(10000, TimeUnit.SECONDS);
-		DemoAutomationHelperClass h = new DemoAutomationHelperClass(driver);
-		h.sendValue(prop.getProperty("FirstName"), prop1.getProperty("FirstName"));
+		DemoAutomationHelperClass helper = new DemoAutomationHelperClass(driver);
+		helper.sendValue(locatorsProperty.getProperty("FirstName"), dataProperty.getProperty("FirstName"));
 	//	driver.findElement(By.xpath()).sendKeys(); //firstName
-		h.sendValue(prop.getProperty("LastName"), prop1.getProperty("LastName"));
+		helper.sendValue(locatorsProperty.getProperty("LastName"), dataProperty.getProperty("LastName"));
 	//	driver.findElement(By.xpath()).sendKeys(); //lastName
-		h.sendValue(prop.getProperty("Address"), prop1.getProperty("Address"));
+		helper.sendValue(locatorsProperty.getProperty("Address"), dataProperty.getProperty("Address"));
 	//	driver.findElement(By.xpath()).sendKeys();  //address
-		h.sendValue(prop.getProperty("EmailAdress"), prop1.getProperty("EmailAdress"));
+		helper.sendValue(locatorsProperty.getProperty("EmailAdress"), dataProperty.getProperty("EmailAdress"));
 	//	driver.findElement(By.xpath()).sendKeys(); //email
-		h.sendValue(prop.getProperty("PhoneNo"), prop1.getProperty("PhoneNo"));
-    //	driver.findElement(By.xpath()).sendKeys();  //mobileNo
-		DemoAutomationHelperClass h1 = new DemoAutomationHelperClass(driver);	
-		h1.radioButton(prop.getProperty("Gender"));
-	//	driver.findElement(By.xpath()).click();  //gender
-		DemoAutomationHelperClass h2 = new DemoAutomationHelperClass(driver);	
-		h2.checkBox(prop.getProperty("Hobby"));
+		helper.sendValue(locatorsProperty.getProperty("PhoneNo"), dataProperty.getProperty("PhoneNo"));
+    
+		helper.radioButton(locatorsProperty.getProperty("Gender"));
+		helper.checkBox(locatorsProperty.getProperty("Hobby"));
 	//	driver.findElement(By.xpath(prop.getProperty("Hobby"))).click();  //hobby
 		Thread.sleep(2000);
-		DemoAutomationHelperClass h5 = new DemoAutomationHelperClass(driver);
-		h5.dropDownForLanguage(prop.getProperty("Language"));
+		helper.dropDownForLanguage(locatorsProperty.getProperty("Language"));
 	//	WebElement element8 =	driver.findElement(By.xpath());  
 	//	element8.click();
 		Thread.sleep(1000);
-		h5.dropDownForLanguage(prop.getProperty("Danish"));
+		helper.dropDownForLanguage(locatorsProperty.getProperty("Danish"));
 //		WebElement element9 =	driver.findElement(By.xpath(prop.getProperty("Danish")));
 //		element9.click();
 //		Thread.sleep(1000);
-		h5.dropDownForLanguage(prop.getProperty("French"));
+		helper.dropDownForLanguage(locatorsProperty.getProperty("French"));
 //		WebElement element10 =	driver.findElement(By.xpath(prop.getProperty("French")));
 //		element10.click();
-//		driver.findElement(By.xpath(prop.getProperty("Form_click"))).click();
-//		Thread.sleep(10000);
+		driver.findElement(By.xpath(locatorsProperty.getProperty("Form_click"))).click();
+		Thread.sleep(10000);
         
-		DemoAutomationHelperClass h3 = new DemoAutomationHelperClass(driver);
-		h3.dropDown(prop.getProperty("Skills"));                   //skills
+		
+		helper.dropDown(locatorsProperty.getProperty("Skills"));                   //skills
 		        
-        h3.dropDown(prop.getProperty("Country"));
-//		WebElement element2 =	driver.findElement(By.xpath(prop.getProperty("Country")));
-//		element2.click();
-//		element2.sendKeys("In");
-//		element2.sendKeys(Keys.ENTER);        //country
-//		Thread.sleep(3000);
-
-        h3.dropDown(prop.getProperty("SelectCountry"));
-//		WebElement txt8 = driver.findElement (By.xpath(prop.getProperty("SelectCountry")));
-//		txt8.click();
-//		Thread.sleep(3000);
-//		txt8.sendKeys(Keys.DOWN);
-//		txt8.sendKeys(Keys.ENTER);
-//		Thread.sleep(3000);
-        DemoAutomationHelperClass h6 = new DemoAutomationHelperClass(driver);
-        h6.selectYear(prop.getProperty("Year")); 
-        h6.selectMonth(prop.getProperty("Month"));
+		helper.dropDown(locatorsProperty.getProperty("Country"));
+		helper.dropDown(locatorsProperty.getProperty("SelectCountry"));
+		helper.selectYear(locatorsProperty.getProperty("Year")); 
+		helper.selectMonth(locatorsProperty.getProperty("Month"));
 		
-        h6.selectYear(prop.getProperty("Date"));
+		helper.selectDate(locatorsProperty.getProperty("Date"));
 		
-		h.sendValue(prop.getProperty("Pwd"), prop1.getProperty("Pwd"));
-//		WebElement element6 =	driver.findElement(By.xpath(prop.getProperty("Pwd")));
-//		element6.click();
-//		element6.sendKeys(prop1.getProperty("Pwd"));
+		helper.sendValue(locatorsProperty.getProperty("Pwd"), dataProperty.getProperty("Pwd"));
 		Thread.sleep(10000);
 
-		h.sendValue(prop.getProperty("ConfirmPwd"), prop1.getProperty("ConfirmPwd"));
-//		WebElement element7 =	driver.findElement(By.xpath(prop.getProperty("ConfirmPwd")));
-//		element7.click();
-//		element7.sendKeys(prop1.getProperty("ConfirmPwd"));
-		
-		DemoAutomationHelperClass h4 = new DemoAutomationHelperClass(driver);
-		h4.buttonClickable("submitbtn");
-//		driver.findElement(By.id("")).click();
+		helper.sendValue(locatorsProperty.getProperty("ConfirmPwd"), dataProperty.getProperty("ConfirmPwd"));
+		helper.buttonClickable("submitbtn");
 		Thread.sleep(10000);
 
 	}
-	@AfterTest
-	public void afterTest() 
-	{
-
-		System.out.println("TEST EXECUTION ENDS...");
-		driver.quit();
 	}
-}
 

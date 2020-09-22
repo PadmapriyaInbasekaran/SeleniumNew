@@ -1,6 +1,4 @@
 package com.atmecs.chatbox;
-
-import java.io.IOException;
 import java.util.Properties;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -23,7 +21,7 @@ public void selectElementFromDropdown(String xpath, String value)
 	s.selectByValue(value);
 	
 }
-public void sendValue(String id, String value) throws InterruptedException
+public void sendKey(String id, String value) throws InterruptedException
 {
 	WebElement Element = driver.findElement(By.id(id));
 	Thread.sleep(2000);
@@ -31,7 +29,7 @@ public void sendValue(String id, String value) throws InterruptedException
 	Thread.sleep(2000);
 	Element.sendKeys(value);
 }
-public void sendValueForWatsappNum(String xpath, String value) throws InterruptedException
+public void sendKeyForWatsappNum(String xpath, String value) throws InterruptedException
 {
 	WebElement Element = driver.findElement(By.xpath(xpath));
 	Thread.sleep(2000);

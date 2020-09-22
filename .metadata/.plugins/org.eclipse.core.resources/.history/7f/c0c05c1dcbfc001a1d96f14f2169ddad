@@ -1,0 +1,84 @@
+package com.atmecs.demoautomation;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+public class RegisterTest extends BaseTest {
+		@Test
+	public void register() throws InterruptedException
+	{
+		driver.manage().timeouts().implicitlyWait(10000, TimeUnit.SECONDS);
+		DemoAutomationHelperClass h = new DemoAutomationHelperClass(driver);
+		h.sendValue(locatorsProperty.getProperty("FirstName"), dataProperty.getProperty("FirstName"));
+	//	driver.findElement(By.xpath()).sendKeys(); //firstName
+		h.sendValue(locatorsProperty.getProperty("LastName"), dataProperty.getProperty("LastName"));
+	//	driver.findElement(By.xpath()).sendKeys(); //lastName
+		h.sendValue(locatorsProperty.getProperty("Address"), dataProperty.getProperty("Address"));
+	//	driver.findElement(By.xpath()).sendKeys();  //address
+		h.sendValue(locatorsProperty.getProperty("EmailAdress"), dataProperty.getProperty("EmailAdress"));
+	//	driver.findElement(By.xpath()).sendKeys(); //email
+		h.sendValue(locatorsProperty.getProperty("PhoneNo"), dataProperty.getProperty("PhoneNo"));
+    //	driver.findElement(By.xpath()).sendKeys();  //mobileNo
+		DemoAutomationHelperClass h1 = new DemoAutomationHelperClass(driver);	
+		h1.radioButton(locatorsProperty.getProperty("Gender"));
+	//	driver.findElement(By.xpath()).click();  //gender
+		DemoAutomationHelperClass h2 = new DemoAutomationHelperClass(driver);	
+		h2.checkBox(locatorsProperty.getProperty("Hobby"));
+	//	driver.findElement(By.xpath(prop.getProperty("Hobby"))).click();  //hobby
+		Thread.sleep(2000);
+		DemoAutomationHelperClass h5 = new DemoAutomationHelperClass(driver);
+		h5.dropDownForLanguage(locatorsProperty.getProperty("Language"));
+	//	WebElement element8 =	driver.findElement(By.xpath());  
+	//	element8.click();
+		Thread.sleep(1000);
+		h5.dropDownForLanguage(locatorsProperty.getProperty("Danish"));
+//		WebElement element9 =	driver.findElement(By.xpath(prop.getProperty("Danish")));
+//		element9.click();
+//		Thread.sleep(1000);
+		h5.dropDownForLanguage(locatorsProperty.getProperty("French"));
+//		WebElement element10 =	driver.findElement(By.xpath(prop.getProperty("French")));
+//		element10.click();
+		driver.findElement(By.xpath(locatorsProperty.getProperty("Form_click"))).click();
+		Thread.sleep(10000);
+        
+		DemoAutomationHelperClass h3 = new DemoAutomationHelperClass(driver);
+		h3.dropDown(locatorsProperty.getProperty("Skills"));                   //skills
+		        
+        h3.dropDown(locatorsProperty.getProperty("Country"));
+        h3.dropDown(locatorsProperty.getProperty("SelectCountry"));
+        DemoAutomationHelperClass h6 = new DemoAutomationHelperClass(driver);
+        h6.selectYear(locatorsProperty.getProperty("Year")); 
+        h6.selectMonth(locatorsProperty.getProperty("Month"));
+		
+        h6.selectDate(locatorsProperty.getProperty("Date"));
+		
+		h.sendValue(locatorsProperty.getProperty("Pwd"), dataProperty.getProperty("Pwd"));
+		Thread.sleep(10000);
+
+		h.sendValue(locatorsProperty.getProperty("ConfirmPwd"), dataProperty.getProperty("ConfirmPwd"));
+		DemoAutomationHelperClass h4 = new DemoAutomationHelperClass(driver);
+		h4.buttonClickable("submitbtn");
+		Thread.sleep(10000);
+
+	}
+	@AfterTest
+	public void afterTest() 
+	{
+
+		System.out.println("TEST EXECUTION ENDS...");
+		driver.quit();
+	}
+}
+

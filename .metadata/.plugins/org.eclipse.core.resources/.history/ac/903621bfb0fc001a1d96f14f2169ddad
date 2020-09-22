@@ -1,0 +1,13 @@
+package com.atmecs.chatbox;
+
+public class Constants {
+	/* Configuration properties*/
+	
+	public static final String CHROME_FILE = System.getProperty("user.dir")+"\\src\\main\\resources\\locators.properties";
+
+	/* Locator properties*/
+	public static final String LOCATORS_FILE = "./src/test/resources/locators/page.properties";
+	public static final String DATA_FILE = "./src/test/resources/locators/validation.properties";
+
+
+	}

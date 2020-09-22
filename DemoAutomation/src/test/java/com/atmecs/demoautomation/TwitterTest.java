@@ -10,36 +10,13 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-public class TwitterTest {
-	WebDriver driver;
-	FileInputStream file;
-	Properties prop;
-	@BeforeTest
-	public void beforeTest() throws InterruptedException, IOException
-	{
-		System.out.println("TEST EXECUTION BEGINS...");
-		file = new FileInputStream(System.getProperty("user.dir")+"\\src\\test\\java\\com\\atmecs\\selenium\\RegisterLocators.properties");
-		prop = new Properties();
-		prop.load(file);
-		String chromeDriverPath = System.setProperty("user.dir",  "\\chromedriver.exe");
-		System.out.println(chromeDriverPath);
-		driver=new ChromeDriver();
-	}
-	@BeforeClass
-	public void beforeClass() throws InterruptedException
-	{
-		driver.navigate().to("http://demo.automationtesting.in/Register.html");   
-		driver.manage().window().maximize();
-
-		System.out.println("Welcome...");
-
-	}
+public class TwitterTest extends BaseTest{
 	
 	@Test
 	public void twitter()
 	{
 		DemoAutomationHelperClass h = new DemoAutomationHelperClass(driver);
-        h.iconClick(prop.getProperty("TwitterIcon"));
+        h.iconClick(locatorsProperty.getProperty("TwitterIcon"));
 		//driver.findElement(By.xpath(prop.getProperty("TwitterIcon"))).click();
 		String parent=driver.getWindowHandle();
 
@@ -69,12 +46,6 @@ public class TwitterTest {
 
 	}
 
-	@AfterTest
-	public void afterTest() 
-	{
-
-		System.out.println("TEST EXECUTION ENDS...");
-		driver.close();
-	}	
+	
 }
 
