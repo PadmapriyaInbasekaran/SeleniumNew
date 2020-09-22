@@ -99,12 +99,34 @@ public class RegisterTest  {
 //		txt8.sendKeys(Keys.DOWN);
 //		txt8.sendKeys(Keys.ENTER);
 //		Thread.sleep(3000);
-        DemoAutomationHelperClass h6 = new DemoAutomationHelperClass(driver);
-        h6.selectYear(prop.getProperty("Year")); 
-        h6.selectMonth(prop.getProperty("Month"));
-		
-        h6.selectYear(prop.getProperty("Date"));
-		
+
+		WebElement element3 = driver.findElement(By.id(prop.getProperty("Year")));
+		element3.click();
+		for(int i=0;i<10;i++)
+		{
+			element3.sendKeys(Keys.ARROW_DOWN);
+		}
+		element3.sendKeys(Keys.ENTER);
+		Thread.sleep(5000);
+
+		WebElement element4 = driver.findElement(By.xpath(prop.getProperty("Month")));
+		element4.click();
+		for(int i=0;i<5;i++)
+		{
+			element4.sendKeys(Keys.ARROW_DOWN);
+		}
+		element4.sendKeys(Keys.ENTER);
+		Thread.sleep(5000);
+
+		WebElement element5 = driver.findElement(By.id(prop.getProperty("Date")));
+		element5.click();
+		for(int i=0;i<10;i++)
+		{
+			element5.sendKeys(Keys.ARROW_DOWN);
+		}
+		element5.sendKeys(Keys.ENTER);
+		Thread.sleep(10000);
+
 		h.sendValue(prop.getProperty("Pwd"), prop1.getProperty("Pwd"));
 //		WebElement element6 =	driver.findElement(By.xpath(prop.getProperty("Pwd")));
 //		element6.click();

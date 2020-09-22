@@ -69,29 +69,4 @@ public class DemoAutomationHelperClass {
 		Thread.sleep(5000); 
 		
 	}
-	public void selectMonth(String id) throws InterruptedException
-	{
-		WebElement element4 = driver.findElement(By.xpath(id));
-		element4.click();
-		for(int i=0;i<5;i++)
-		{
-			element4.sendKeys(Keys.ARROW_DOWN);
-		}
-		element4.sendKeys(Keys.ENTER);
-		Thread.sleep(5000); 
-		
-	}
-	public void selectDate(String id) throws InterruptedException
-	{
-		WebElement element5 = driver.findElement(By.id(id));
-		element5.click();
-		for(int i=0;i<10;i++)
-		{
-			element5.sendKeys(Keys.ARROW_DOWN);
-		}
-		element5.sendKeys(Keys.ENTER);
-		Thread.sleep(10000);
- 
-		
-	}
 }
