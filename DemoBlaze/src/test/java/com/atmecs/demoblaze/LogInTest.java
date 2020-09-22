@@ -46,7 +46,7 @@ public class LogInTest {
 		lh1.sendValue(prop.getProperty("LoginPwd_Id"), prop1.getProperty("LogInPwd"));
 		//driver.findElement(By.id()).sendKeys();
 		DemoBlazeHelperClass lh2 = new DemoBlazeHelperClass(driver);
-		lh2.button(prop.getProperty("Button"));
+		lh2.buttonClickable(prop.getProperty("Button"));
 		//driver.findElement(By.xpath()).click();
 
 	}

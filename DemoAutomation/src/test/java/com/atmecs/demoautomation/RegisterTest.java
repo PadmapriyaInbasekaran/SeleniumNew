@@ -67,19 +67,22 @@ public class RegisterTest  {
 		h2.checkBox(prop.getProperty("Hobby"));
 	//	driver.findElement(By.xpath(prop.getProperty("Hobby"))).click();  //hobby
 		Thread.sleep(2000);
-        
-		WebElement element8 =	driver.findElement(By.xpath(prop.getProperty("Language")));  
-		element8.click();
+		DemoAutomationHelperClass h5 = new DemoAutomationHelperClass(driver);
+		h5.dropDownForLanguage(prop.getProperty("Language"));
+	//	WebElement element8 =	driver.findElement(By.xpath());  
+	//	element8.click();
 		Thread.sleep(1000);
-		WebElement element9 =	driver.findElement(By.xpath(prop.getProperty("Danish")));
-		element9.click();
-		Thread.sleep(1000);
-		WebElement element10 =	driver.findElement(By.xpath(prop.getProperty("French")));
-		element10.click();
-		driver.findElement(By.xpath(prop.getProperty("Form_click"))).click();
-		Thread.sleep(10000);
+		h5.dropDownForLanguage(prop.getProperty("Danish"));
+//		WebElement element9 =	driver.findElement(By.xpath(prop.getProperty("Danish")));
+//		element9.click();
+//		Thread.sleep(1000);
+		h5.dropDownForLanguage(prop.getProperty("French"));
+//		WebElement element10 =	driver.findElement(By.xpath(prop.getProperty("French")));
+//		element10.click();
+//		driver.findElement(By.xpath(prop.getProperty("Form_click"))).click();
+//		Thread.sleep(10000);
         
-		DemoAutomationHelperClass h3 = new DemoAutomationHelperClass(driver);	
+		DemoAutomationHelperClass h3 = new DemoAutomationHelperClass(driver);
 		h3.dropDown(prop.getProperty("Skills"));                   //skills
 		        
         h3.dropDown(prop.getProperty("Country"));
@@ -136,7 +139,7 @@ public class RegisterTest  {
 //		element7.sendKeys(prop1.getProperty("ConfirmPwd"));
 		
 		DemoAutomationHelperClass h4 = new DemoAutomationHelperClass(driver);
-		h4.button("submitbtn");
+		h4.buttonClickable("submitbtn");
 //		driver.findElement(By.id("")).click();
 		Thread.sleep(10000);
 

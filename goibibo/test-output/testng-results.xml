@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-09-22T04:47:41Z" name="Suite" finished-at="2020-09-22T04:48:07Z" duration-ms="26388">
+  <suite started-at="2020-09-22T05:46:30Z" name="Suite" finished-at="2020-09-22T05:46:45Z" duration-ms="14813">
     <groups>
     </groups>
-    <test started-at="2020-09-22T04:47:41Z" name="SignUp" finished-at="2020-09-22T04:48:04Z" duration-ms="23753">
+    <test started-at="2020-09-22T05:46:30Z" name="SignUp" finished-at="2020-09-22T05:46:42Z" duration-ms="12292">
       <class name="com.atmecs.goibibo.SignUpTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.atmecs.goibibo.SignUpTest@3c153a1]" started-at="2020-09-22T04:47:41Z" name="beforeTest" finished-at="2020-09-22T04:47:41Z" duration-ms="13" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.atmecs.goibibo.SignUpTest@3c153a1]" started-at="2020-09-22T05:46:30Z" name="beforeTest" finished-at="2020-09-22T05:46:30Z" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.atmecs.goibibo.SignUpTest@3c153a1]" started-at="2020-09-22T04:47:41Z" name="beforeMethod" finished-at="2020-09-22T04:48:04Z" duration-ms="23689" status="FAIL">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.atmecs.goibibo.SignUpTest@3c153a1]" started-at="2020-09-22T05:46:30Z" name="beforeMethod" finished-at="2020-09-22T05:46:42Z" duration-ms="12231" status="FAIL">
           <exception class="java.io.FileNotFoundException">
             <message>
               <![CDATA[D:\Selenium\goibibo (Access is denied)]]>
@@ -57,7 +57,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="booking()[pri:0, instance:com.atmecs.goibibo.SignUpTest@3c153a1]" started-at="2020-09-22T04:48:04Z" name="booking" finished-at="2020-09-22T04:48:04Z" duration-ms="0" status="SKIP">
+        <test-method signature="booking()[pri:0, instance:com.atmecs.goibibo.SignUpTest@3c153a1]" started-at="2020-09-22T05:46:42Z" name="booking" finished-at="2020-09-22T05:46:42Z" duration-ms="0" status="SKIP">
           <exception class="java.io.FileNotFoundException">
             <message>
               <![CDATA[D:\Selenium\goibibo (Access is denied)]]>
@@ -103,23 +103,23 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- booking -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.atmecs.goibibo.SignUpTest@3c153a1]" started-at="2020-09-22T04:48:04Z" name="afterMethod" finished-at="2020-09-22T04:48:04Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.atmecs.goibibo.SignUpTest@3c153a1]" started-at="2020-09-22T05:46:42Z" name="afterMethod" finished-at="2020-09-22T05:46:42Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.atmecs.goibibo.SignUpTest@3c153a1]" started-at="2020-09-22T04:48:04Z" name="afterTest" finished-at="2020-09-22T04:48:04Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.atmecs.goibibo.SignUpTest@3c153a1]" started-at="2020-09-22T05:46:42Z" name="afterTest" finished-at="2020-09-22T05:46:42Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- com.atmecs.goibibo.SignUpTest -->
     </test> <!-- SignUp -->
-    <test started-at="2020-09-22T04:48:04Z" name="booking" finished-at="2020-09-22T04:48:07Z" duration-ms="2535">
+    <test started-at="2020-09-22T05:46:42Z" name="booking" finished-at="2020-09-22T05:46:45Z" duration-ms="2414">
       <class name="com.atmecs.goibibo.BookingTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.atmecs.goibibo.BookingTest@79ad8b2f]" started-at="2020-09-22T04:48:04Z" name="beforeTest" finished-at="2020-09-22T04:48:04Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.atmecs.goibibo.BookingTest@79ad8b2f]" started-at="2020-09-22T05:46:42Z" name="beforeTest" finished-at="2020-09-22T05:46:42Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.atmecs.goibibo.BookingTest@79ad8b2f]" started-at="2020-09-22T04:48:04Z" name="beforeMethod" finished-at="2020-09-22T04:48:07Z" duration-ms="2526" status="FAIL">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.atmecs.goibibo.BookingTest@79ad8b2f]" started-at="2020-09-22T05:46:42Z" name="beforeMethod" finished-at="2020-09-22T05:46:45Z" duration-ms="2399" status="FAIL">
           <exception class="java.io.FileNotFoundException">
             <message>
               <![CDATA[\chromedriver.exe (The system cannot find the file specified)]]>
@@ -130,7 +130,7 @@ at java.base/java.io.FileInputStream.open0(Native Method)
 at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
 at java.base/java.io.FileInputStream.<init>(FileInputStream.java:155)
 at java.base/java.io.FileInputStream.<init>(FileInputStream.java:110)
-at com.atmecs.goibibo.BookingTest.beforeMethod(BookingTest.java:37)
+at com.atmecs.goibibo.BookingTest.beforeMethod(BookingTest.java:35)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -165,7 +165,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="signup()[pri:0, instance:com.atmecs.goibibo.BookingTest@79ad8b2f]" started-at="2020-09-22T04:48:07Z" name="signup" finished-at="2020-09-22T04:48:07Z" duration-ms="0" status="SKIP">
+        <test-method signature="signup()[pri:0, instance:com.atmecs.goibibo.BookingTest@79ad8b2f]" started-at="2020-09-22T05:46:45Z" name="signup" finished-at="2020-09-22T05:46:45Z" duration-ms="0" status="SKIP">
           <exception class="java.io.FileNotFoundException">
             <message>
               <![CDATA[\chromedriver.exe (The system cannot find the file specified)]]>
@@ -176,7 +176,7 @@ at java.base/java.io.FileInputStream.open0(Native Method)
 at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
 at java.base/java.io.FileInputStream.<init>(FileInputStream.java:155)
 at java.base/java.io.FileInputStream.<init>(FileInputStream.java:110)
-at com.atmecs.goibibo.BookingTest.beforeMethod(BookingTest.java:37)
+at com.atmecs.goibibo.BookingTest.beforeMethod(BookingTest.java:35)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -211,11 +211,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signup -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.atmecs.goibibo.BookingTest@79ad8b2f]" started-at="2020-09-22T04:48:07Z" name="afterMethod" finished-at="2020-09-22T04:48:07Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.atmecs.goibibo.BookingTest@79ad8b2f]" started-at="2020-09-22T05:46:45Z" name="afterMethod" finished-at="2020-09-22T05:46:45Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.atmecs.goibibo.BookingTest@79ad8b2f]" started-at="2020-09-22T04:48:07Z" name="afterTest" finished-at="2020-09-22T04:48:07Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.atmecs.goibibo.BookingTest@79ad8b2f]" started-at="2020-09-22T05:46:45Z" name="afterTest" finished-at="2020-09-22T05:46:45Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

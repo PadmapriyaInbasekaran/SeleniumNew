@@ -17,19 +17,36 @@ public HelperClass(WebDriver driver)
 	this.driver = driver;
 }
 
-public void selectElement(String xpath, String value) throws IOException
+public void selectElementFromDropdown(String xpath, String value) 
 {
 	Select s=new Select(driver.findElement(By.xpath(xpath)));
 	s.selectByValue(value);
 	
 }
-public void sendValue(String xpath, String value)
+public void sendValue(String id, String value) throws InterruptedException
 {
-	WebElement Element = driver.findElement(By.id(xpath));
+	WebElement Element = driver.findElement(By.id(id));
+	Thread.sleep(2000);
 	Element.click();
+	Thread.sleep(2000);
 	Element.sendKeys(value);
 }
-public void button(String xpath)
+public void sendValueForWatsappNum(String xpath, String value) throws InterruptedException
+{
+	WebElement Element = driver.findElement(By.xpath(xpath));
+	Thread.sleep(2000);
+	Element.click();
+	Thread.sleep(2000);
+	Element.sendKeys(value);
+}
+public void buttonClickable(String xpath)
+{
+	JavascriptExecutor js = (JavascriptExecutor) driver;
+	WebElement Buttons = driver.findElement(By.xpath(xpath));
+	js.executeScript("arguments[0].click();", Buttons);
+	
+}
+public void chatIcon(String xpath)
 {
 	JavascriptExecutor js = (JavascriptExecutor) driver;
 	WebElement Buttons = driver.findElement(By.xpath(xpath));

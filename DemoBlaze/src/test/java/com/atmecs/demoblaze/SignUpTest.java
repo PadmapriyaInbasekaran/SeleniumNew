@@ -52,14 +52,14 @@ public class SignUpTest {
 	    h.sendValue(prop.getProperty("Pwd_Id"), prop1.getProperty("Pwd"));
 	    
 	    DemoBlazeHelperClass h1 = new DemoBlazeHelperClass(driver);
-	    h1.button(prop.getProperty("Button_Xpath"));
+	    h1.buttonClickable(prop.getProperty("Button_Xpath"));
 		
 		WebDriverWait wait=new WebDriverWait(driver, 2000);
 		wait.until(ExpectedConditions.alertIsPresent());
 
 		driver.switchTo().alert().accept();
 		Thread.sleep(3000);
-		h1.button(prop.getProperty("CloseButton_Xpath"));
+		h1.buttonClickable(prop.getProperty("CloseButton_Xpath"));
 			}
 	@AfterTest
 	public void afterTest() 

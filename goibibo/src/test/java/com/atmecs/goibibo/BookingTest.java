@@ -49,11 +49,15 @@ public class BookingTest {
 	{
 		
 		Thread.sleep(2000);
-		driver.findElement(By.id(prop.getProperty("SignUp_id"))).click();
+		HelperClass h3 =new HelperClass(driver);
+		h3.findElementById(prop.getProperty("SignUp_id"));
+	//	driver.findElement(By.id(prop.getProperty("SignUp_id"))).click();
 		Thread.sleep(5000);
 		driver.switchTo().frame("authiframe");
 		Thread.sleep(2000);
-		driver.findElement(By.xpath(prop.getProperty("SignInToFB"))).click();
+		HelperClass h4 =new HelperClass(driver);
+		h4.findElementByXpath(prop.getProperty("SignInToFB"));
+	//	driver.findElement(By.xpath(prop.getProperty("SignInToFB"))).click();
 		Thread.sleep(2000);
 		String parent=driver.getWindowHandle();
 		Set<String>s=driver.getWindowHandles();
@@ -72,7 +76,7 @@ public class BookingTest {
 			//	driver.findElement(By.id(prop.getProperty("FacebookPwd"))).sendKeys(prop1.getProperty("FacebookPwd"));
 				//driver.findElement(By.name(prop.getProperty("LoginButton"))).click();
 				HelperClass h1 = new HelperClass(driver);
-				h1.button(prop.getProperty("LoginButton"));
+				h1.buttonClickableByName(prop.getProperty("LoginButton"));
 				Thread.sleep(5000);
 				HelperClass h2 = new HelperClass(driver);
 				h2.getText(prop.getProperty("ErrorMessage"));

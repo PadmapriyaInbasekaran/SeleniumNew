@@ -17,14 +17,14 @@ public class DemoBlazeHelperClass {
 	{
 		driver.findElement(By.xpath(xpath)).sendKeys(value);
 	}
-		public void button(String xpath)
+		public void buttonClickable(String xpath)
 	{
 		driver.findElement(By.name(xpath)).click();
 		
 	}
-	public void linkText(String xpath)
+	public void linkText(String value)
 	{
-		driver.findElement(By.linkText(xpath)).click();
+		driver.findElement(By.linkText(value)).click();
 		
 	}
 }

@@ -17,14 +17,14 @@ public class DemoAutomationHelperClass {
 	{
 		driver.findElement(By.xpath(xpath)).sendKeys(value);
 	}
-		public void button(String id)
+		public void buttonClickable(String id)
 	{
 		driver.findElement(By.id(id)).click();
 		
 	}
-	public void linkText(String xpath)
+	public void linkText(String value)
 	{
-		driver.findElement(By.linkText(xpath)).click();
+		driver.findElement(By.linkText(value)).click();
 		
 	}
 	public void radioButton(String xpath)
@@ -48,6 +48,13 @@ public class DemoAutomationHelperClass {
 	public void iconClick(String xpath)
 	{
 		driver.findElement(By.xpath(xpath)).click(); 
+		
+	}
+	public void dropDownForLanguage(String xpath) throws InterruptedException
+	{
+		WebElement element1 =	driver.findElement(By.xpath(xpath));  
+		element1.click();
+		Thread.sleep(1000);
 		
 	}
 }

@@ -1,0 +1,44 @@
+package com.atmecs.goibibo;
+import java.util.Properties;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+public class HelperClass {
+	WebDriver driver;
+	Properties prop ;
+	Properties prop1 ;
+	public HelperClass(WebDriver driver)
+	{
+		this.driver = driver;
+	}
+	
+	public void sendValue(String xpath, String value)
+	{
+		driver.findElement(By.id(xpath)).sendKeys(prop1.getProperty(value));
+	}
+	public void buttonClickableByName(String value)
+	{
+		driver.findElement(By.name(value)).click();
+		
+	}
+	public void getText(String id)
+	{
+		WebElement text = 	driver.findElement(By.id(id));
+		System.out.println(text.getText());	
+	}
+	public void findElementBylinkText(String value)
+	{
+		driver.findElement(By.linkText(value)).click();
+		
+	}
+	public void findElementById(String value)
+	{
+		driver.findElement(By.id((value))).click();
+		
+	}
+	public void findElementByXpath(String value)
+	{
+		driver.findElement(By.xpath((value))).click();
+		
+	}
+}

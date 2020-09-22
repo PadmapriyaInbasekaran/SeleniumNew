@@ -1,12 +1,13 @@
 package com.atmecs.chatbox;
-import java.io.FileInputStream;
+import java.io.FileInputStream
+;
 import java.io.IOException;
 import java.util.Properties;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
+//import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+//import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -44,26 +45,28 @@ public class ChatBoxTest {
 	@Test
 	public void chatBox() throws InterruptedException, IOException
 	{
-		JavascriptExecutor js = (JavascriptExecutor) driver;
+	//	JavascriptExecutor js = (JavascriptExecutor) driver;
 		Thread.sleep(10000);
 		driver.switchTo().frame("chat-widget");
 		WebDriverWait wait = new WebDriverWait(driver, 50);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(prop.getProperty("chatIcon"))));
 		Thread.sleep(3000);
-		WebElement	chatIcon = 	driver.findElement(By.xpath(prop.getProperty("chatIcon")));
-		js.executeScript("arguments[0].click();", chatIcon);
+		HelperClass h2 = new HelperClass(driver);
+		h2.chatIcon(prop.getProperty("chatIcon"));
+//		WebElement	chatIcon = 	driver.findElement(By.xpath(prop.getProperty("chatIcon")));
+//		js.executeScript("arguments[0].click();", chatIcon);
 		Thread.sleep(3000);
 		HelperClass h1 = new HelperClass(driver);
 		h1.sendValue(prop.getProperty("Name"), prop1.getProperty("Name"));
 		Thread.sleep(5000);
-		h1.sendValue(prop.getProperty("WhatsappNumber"), prop1.getProperty("WhatsappNumber"));
+		h1.sendValueForWatsappNum(prop.getProperty("WhatsappNumber"), prop1.getProperty("WhatsappNumber"));
 		Thread.sleep(3000);
 		h1.sendValue(prop.getProperty("Email"), prop1.getProperty("Email"));
 		HelperClass h = new HelperClass(driver);
-		h.selectElement(prop.getProperty("DropDown"), prop.getProperty("DropDown_Value"));
+		h.selectElementFromDropdown(prop.getProperty("DropDown"), prop.getProperty("DropDown_Value"));
 		Thread.sleep(3000);
 		HelperClass h3 = new HelperClass(driver);
-		h3.button(prop.getProperty("StartChat"));
+		h3.buttonClickable(prop.getProperty("StartChat"));
 	
 	
 		Thread.sleep(3000);

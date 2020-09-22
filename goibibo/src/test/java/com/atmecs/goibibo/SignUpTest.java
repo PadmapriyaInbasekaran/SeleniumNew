@@ -36,7 +36,7 @@ public class SignUpTest {
 		//String chromeDriverPath = System.setProperty("user.dir" ,  "\\chromedriver.exe");
 		//System.out.println(chromeDriverPath);
 		driver=new ChromeDriver();
-		driver.navigate().to("https://www.goibibo.com/flights/");   
+		driver.navigate().to("http://www.goibibo.com/flights/");   
 		driver.manage().window().maximize();
 		
 		file = new FileInputStream(System.setProperty("user.dir","\\src\\main\\resources\\locators\\locators.properties"));
@@ -52,7 +52,10 @@ public class SignUpTest {
 	{
 		
 		driver.manage().timeouts().implicitlyWait(10000, TimeUnit.SECONDS);
-		driver.findElement(By.id((prop.getProperty("RoundTrip_id")))).click();
+		HelperClass h =new HelperClass(driver);
+		h.findElementById(prop.getProperty("RoundTrip_id"));
+	//	driver.findElement(By.id((prop.getProperty("RoundTrip_id")))).click();
+		
 		WebElement field1 =	driver.findElement(By.id(prop.getProperty("From_id")));
 		field1.click();
 		field1.sendKeys(prop1.getProperty("From"));
@@ -70,19 +73,30 @@ public class SignUpTest {
 		field2.sendKeys(Keys.ENTER);
 		Thread.sleep(2000);
 
-		driver.findElement(By.id(prop.getProperty("Departure_id"))).click();
-		driver.findElement(By.id(prop.getProperty("Date20"))).click();
+		h.findElementById(prop.getProperty("Departure_id"));
+	//	driver.findElement(By.id(prop.getProperty("Departure_id"))).click();
+		
+		h.findElementById(prop.getProperty("Date20"));
+	//	driver.findElement(By.id(prop.getProperty("Date20"))).click();
 
-		driver.findElement(By.id(prop.getProperty("Return_id"))).click();
-		driver.findElement(By.id(prop.getProperty("Date22"))).click();
+		h.findElementById(prop.getProperty("Return_id"));
+	//	driver.findElement(By.id(prop.getProperty("Return_id"))).click();
+		
+		h.findElementById(prop.getProperty("Date22"));
+	//	driver.findElement(By.id(prop.getProperty("Date22"))).click();
 		Thread.sleep(2000);
-		driver.findElement(By.id(prop.getProperty("Travel_id"))).click();
+		
+		h.findElementById(prop.getProperty("Travel_id"));
+	//	driver.findElement(By.id(prop.getProperty("Travel_id"))).click();
 		Thread.sleep(2000);
 		for(int i=0;i<4;i++)
 		{
-			driver.findElement(By.id(prop.getProperty("Passengers"))).click();
+			h.findElementById(prop.getProperty("Passengers"));
+		//	driver.findElement(By.id(prop.getProperty("Passengers"))).click();
 		}
-		driver.findElement(By.id(prop.getProperty("Search_btn"))).click();
+		h.findElementById(prop.getProperty("Search_btn"));
+		
+	//	driver.findElement(By.id(prop.getProperty("Search_btn"))).click();
 		Thread.sleep(10000);
 		
 	}
