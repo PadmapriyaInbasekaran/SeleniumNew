@@ -13,18 +13,7 @@ import org.testng.annotations.Test;
 
 public class ContactUsTest {
 	WebDriver driver;
-	@BeforeTest
-	public void beforeTest() throws InterruptedException
-	{
-		System.out.println("TEST EXECUTION BEGINS...");
-		String chromeDriverPath = System.setProperty("user.dir",  "\\lib\\chromedriver.exe");
-		System.out.println(chromeDriverPath);
-		driver=new ChromeDriver();
-		driver.navigate().to("https://www.demoblaze.com");   
-		driver.manage().window().maximize();
-
-		System.out.println("Welcome to DEMOBLAZE...");
-	}
+	
 	@Test
 	public void demoBlazeContact() throws InterruptedException
 	{
@@ -42,11 +31,6 @@ public class ContactUsTest {
 		driver.switchTo().alert().accept();
 
 	}
-	@AfterTest
-	public void afterTest() 
-	{
-		System.out.println("TEST EXECUTION ENDS...");
-		driver.close();
-	}
+
 }
 

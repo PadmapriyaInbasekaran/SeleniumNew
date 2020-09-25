@@ -1,14 +1,20 @@
 package com.atmecs.demoblaze;
-import java.util.concurrent.TimeUnit;
 import org.testng.annotations.Test;
+
+import com.atmecs.demoblaze.basetest.BaseTest;
+import com.atmecs.demoblaze.pagehelper.VerifyCart;
 
 public class VerifyCartTest extends BaseTest{
 	@Test
-	public void demoBlazeVerifyCart() throws InterruptedException
+	public void verifyCartTest() 
 	{
-		DemoBlazeHelperClass helper = new DemoBlazeHelperClass(driver);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		helper.linkText(locatorsProperty.getProperty("CartVerify_LinkText"));
-		}	
+		VerifyCart v = new VerifyCart(driver);
+		try {
+			v.demoBlazeVerifyCart();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 	}
 

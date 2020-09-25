@@ -5,9 +5,9 @@
     <classes>
       <class name="com.atmecs.chatbox.ChatBoxTest">
         <methods>
-          <include name="chatBox"/>
-          <include name="afterTest"/>
+          <include name="chatBoxTest"/>
           <include name="beforeTest"/>
+          <include name="afterTest"/>
         </methods>
       </class> <!-- com.atmecs.chatbox.ChatBoxTest -->
     </classes>

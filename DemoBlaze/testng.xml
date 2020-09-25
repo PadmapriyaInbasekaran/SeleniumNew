@@ -3,11 +3,12 @@
 <suite name="DemoBlaze">
 <test name="SignUp">
 <classes>
-<class name="com.atmecs.demoblaze.SignUpTest"/>
 <class name="com.atmecs.demoblaze.LogInTest"/>
+<class name="com.atmecs.demoblaze.SignUpTest"/>
+
 <class name="com.atmecs.demoblaze.AddToCartTest"/>
 <class name="com.atmecs.demoblaze.VerifyCartTest"/>
-<class name="com.atmecs.demoblaze.ContactUsTest"/>
+
 </classes>
 </test>
 </suite>

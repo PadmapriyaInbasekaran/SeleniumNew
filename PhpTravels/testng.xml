@@ -5,5 +5,5 @@
     <classes>
       <class name="com.atmecs.chatbox.ChatBoxTest"/>
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+  </test> 
+</suite> 

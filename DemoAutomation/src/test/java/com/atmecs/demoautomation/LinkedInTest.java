@@ -1,50 +1,17 @@
 package com.atmecs.demoautomation;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.util.Iterator;
-import java.util.Properties;
-import java.util.Set;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import com.atmecs.demoautomation.basetest.BaseTest;
+//import com.atmecs.demoautomation.helperclass.DemoAutomationHelperClass;
+import com.atmecs.demoautomation.pagehelper.LinkedIn;
+
 public class LinkedInTest extends BaseTest{
-		@Test
-	public void linkedIn()
+	@Test
+	public void linkedInTest()
 	{
-		DemoAutomationHelperClass helper = new DemoAutomationHelperClass(driver);
-        helper.iconClick(locatorsProperty.getProperty("LinkedInIcon"));
-	
-		String parent=driver.getWindowHandle();
-
-		Set<String>s=driver.getWindowHandles();
-
-		// Now iterate using Iterator
-		Iterator<String> I1= s.iterator();
-
-		while(I1.hasNext())
-		{
-
-			String child_window=I1.next();
-
-
-			if(!parent.equals(child_window))
-			{
-				driver.switchTo().window(child_window);
-
-				System.out.println(driver.switchTo().window(child_window).getTitle());
-
-				driver.close();
-			}
-
-		}
-		//switch to the parent window
-		driver.switchTo().window(parent);
-
+		LinkedIn linkedin = new LinkedIn(driver);
+		linkedin.linkedIn();	
 	}
-		
+
 }
 

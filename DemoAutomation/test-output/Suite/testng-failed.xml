@@ -3,13 +3,6 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Register(failed)">
     <classes>
-      <class name="com.atmecs.demoautomation.FaceBookTest">
-        <methods>
-          <include name="beforeTest"/>
-          <include name="faceBook"/>
-          <include name="afterTest"/>
-        </methods>
-      </class> <!-- com.atmecs.demoautomation.FaceBookTest -->
       <class name="com.atmecs.demoautomation.GooglePlusTest">
         <methods>
           <include name="beforeTest"/>
@@ -17,32 +10,18 @@
           <include name="googlePlus"/>
         </methods>
       </class> <!-- com.atmecs.demoautomation.GooglePlusTest -->
-      <class name="com.atmecs.demoautomation.LinkedInTest">
-        <methods>
-          <include name="beforeTest"/>
-          <include name="linkedIn"/>
-          <include name="afterTest"/>
-        </methods>
-      </class> <!-- com.atmecs.demoautomation.LinkedInTest -->
-      <class name="com.atmecs.demoautomation.YouTubeTest">
-        <methods>
-          <include name="beforeTest"/>
-          <include name="afterTest"/>
-          <include name="youTube"/>
-        </methods>
-      </class> <!-- com.atmecs.demoautomation.YouTubeTest -->
       <class name="com.atmecs.demoautomation.RegisterTest">
         <methods>
+          <include name="registerTest"/>
           <include name="beforeTest"/>
           <include name="afterTest"/>
-          <include name="register"/>
         </methods>
       </class> <!-- com.atmecs.demoautomation.RegisterTest -->
       <class name="com.atmecs.demoautomation.TwitterTest">
         <methods>
           <include name="beforeTest"/>
-          <include name="twitter"/>
           <include name="afterTest"/>
+          <include name="twitterTest"/>
         </methods>
       </class> <!-- com.atmecs.demoautomation.TwitterTest -->
     </classes>
