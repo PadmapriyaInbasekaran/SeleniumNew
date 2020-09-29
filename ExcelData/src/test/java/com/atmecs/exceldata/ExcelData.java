@@ -17,7 +17,6 @@ public class ExcelData extends BaseTest{
  		HelperClass helper = new HelperClass(driver);
 		Thread.sleep(20000);
 		driver.switchTo().frame("chat-widget");
-		System.out.println("Inside frame successfully");
 		Thread.sleep(3000);
 	    helper.chatIconMethod(locationPath.getProperty("chatIcon"));
         helper.sendKeyByXpath(locationPath.getProperty("Name"), userName);

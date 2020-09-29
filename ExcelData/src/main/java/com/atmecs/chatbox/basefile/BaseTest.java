@@ -15,11 +15,11 @@ public class BaseTest extends Constants{
 		System.out.println("TEST EXECUTION BEGINS...");
 
 		String chromeDriverPath = System.setProperty("user.dir",  CHROME_FILE);
-		System.out.println("BaseFile " +chromeDriverPath);
+		System.out.println(chromeDriverPath);
 		driver=new ChromeDriver();
 		driver.navigate().to("https://www.phptravels.com/");   
 		driver.manage().window().maximize();
-		System.out.println(driver);
+		
 	}
 	@AfterMethod
 	public void afterTest() 

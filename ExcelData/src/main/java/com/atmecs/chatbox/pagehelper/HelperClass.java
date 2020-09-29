@@ -10,7 +10,7 @@ public class HelperClass extends BaseTest {
 	public HelperClass(WebDriver driver)
 	{
 		this.driver = driver;
-		System.out.println("HelperClass " +driver);
+		
 	}
 	public void selectElementFromDropdown(String xpath, String value) throws InterruptedException 
 	{
@@ -36,7 +36,7 @@ public class HelperClass extends BaseTest {
 		Element.click();
 		Thread.sleep(2000);
 		Element.sendKeys(value);
-		System.out.println(value);
+		
 	}
 	public void sendKeyForWatsappNum(String xpath, String value) throws InterruptedException
 	{
@@ -55,12 +55,7 @@ public class HelperClass extends BaseTest {
 	}
 	public void chatIconMethod(String xpath) throws InterruptedException
 	{
-		//JavascriptExecutor js = (JavascriptExecutor) driver;
-		//WebElement Buttons = driver.findElement(By.xpath(xpath));
-		//	js.executeScript("arguments[0].click();", Buttons);
 		WebElement icon =	driver.findElement(By.xpath(xpath));
-		Thread.sleep(1000);
-		System.out.println("Icon" +icon);
 		Thread.sleep(1000);
 		icon.click();
 		Thread.sleep(3000);
