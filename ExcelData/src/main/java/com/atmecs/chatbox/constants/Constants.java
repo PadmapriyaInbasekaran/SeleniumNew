@@ -1,5 +1,4 @@
 package com.atmecs.chatbox.constants;
-
 public class Constants {
 
 	public static final String CHROME_FILE = "\\chromedriver.exe";

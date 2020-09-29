@@ -1,24 +1,33 @@
 package com.atmecs.exceldata;
+import java.util.Properties;
 
-import java.io.IOException;
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
-
-import com.atmecs.chatbox.PageFile.PageHelper;
 import com.atmecs.chatbox.basefile.BaseTest;
+import com.atmecs.chatbox.constants.Constants;
+import com.atmecs.chatbox.pagehelper.HelperClass;
 
+import com.atmecs.chatbox.utilitiesfile.UtilitiesClass;
 public class ExcelData extends BaseTest{
-	//public WebDriver driver;
-	@Test
-	public void excelData()
-	{
-		PageHelper p = new PageHelper(driver);
-		System.out.println(driver);
-		try {
-			p.ReadData();
-		} catch (IOException | InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
+	Properties locationPath;
+
+	@Test(dataProvider = "Data" ,dataProviderClass = ReadExcelSheet.class)
+	public void ReadData(String userName, String watsappNumber, String emailId) throws InterruptedException
+     {
+		locationPath = UtilitiesClass.readProperty(Constants.LOCATORS_FILE);
+ 		HelperClass helper = new HelperClass(driver);
+		Thread.sleep(20000);
+		driver.switchTo().frame("chat-widget");
+		System.out.println("Inside frame successfully");
+		Thread.sleep(3000);
+	    helper.chatIconMethod(locationPath.getProperty("chatIcon"));
+        helper.sendKeyByXpath(locationPath.getProperty("Name"), userName);
+        helper.sendKeyForWatsappNum(locationPath.getProperty("WhatsappNumber"), watsappNumber);
+        helper.sendKey(locationPath.getProperty("Email"), emailId);
+        Thread.sleep(3000);
+		helper.buttonClickable(locationPath.getProperty("StartChat"));
+
+
+		Thread.sleep(3000);
+
+     } 
 	}

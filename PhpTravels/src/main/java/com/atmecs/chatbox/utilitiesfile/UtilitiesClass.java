@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.Properties;
 import com.atmecs.chatbox.constants.Constants;
 
-public class UtilitiesClass extends Constants{
+public class UtilitiesClass {
 	public static Properties properties;
 
 	public static Properties readProperty(String path) 

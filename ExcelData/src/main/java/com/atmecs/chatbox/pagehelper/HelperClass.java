@@ -28,6 +28,16 @@ public class HelperClass extends BaseTest {
 		Thread.sleep(2000);
 		Element.sendKeys(value);
 	}
+	public void sendKeyByXpath(String xpath, String value) throws InterruptedException
+	{
+
+		WebElement Element = driver.findElement(By.xpath(xpath));
+		Thread.sleep(2000);
+		Element.click();
+		Thread.sleep(2000);
+		Element.sendKeys(value);
+		System.out.println(value);
+	}
 	public void sendKeyForWatsappNum(String xpath, String value) throws InterruptedException
 	{
 		WebElement Element = driver.findElement(By.xpath(xpath));
@@ -51,6 +61,8 @@ public class HelperClass extends BaseTest {
 		WebElement icon =	driver.findElement(By.xpath(xpath));
 		Thread.sleep(1000);
 		System.out.println("Icon" +icon);
+		Thread.sleep(1000);
 		icon.click();
+		Thread.sleep(3000);
 	}
 }

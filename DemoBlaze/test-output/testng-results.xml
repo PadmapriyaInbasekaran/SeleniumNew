@@ -1,67 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-09-25T09:08:49Z" name="DemoBlaze" finished-at="2020-09-25T09:09:29Z" duration-ms="39279">
+  <suite started-at="2020-09-29T01:54:03Z" name="Default suite" finished-at="2020-09-29T01:54:21Z" duration-ms="18070">
     <groups>
     </groups>
-    <test started-at="2020-09-25T09:08:49Z" name="SignUp" finished-at="2020-09-25T09:09:29Z" duration-ms="39279">
-      <class name="com.atmecs.demoblaze.SignUpTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.atmecs.demoblaze.SignUpTest@5db45159]" started-at="2020-09-25T09:08:58Z" name="beforeTest" finished-at="2020-09-25T09:09:03Z" duration-ms="4827" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="signupTest()[pri:0, instance:com.atmecs.demoblaze.SignUpTest@5db45159]" started-at="2020-09-25T09:09:03Z" name="signupTest" finished-at="2020-09-25T09:09:10Z" duration-ms="6507" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- signupTest -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.atmecs.demoblaze.SignUpTest@5db45159]" started-at="2020-09-25T09:09:10Z" name="afterTest" finished-at="2020-09-25T09:09:12Z" duration-ms="2348" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- com.atmecs.demoblaze.SignUpTest -->
+    <test started-at="2020-09-29T01:54:03Z" name="Default test" finished-at="2020-09-29T01:54:21Z" duration-ms="18070">
       <class name="com.atmecs.demoblaze.VerifyCartTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.atmecs.demoblaze.VerifyCartTest@7c417213]" started-at="2020-09-25T09:09:21Z" name="beforeTest" finished-at="2020-09-25T09:09:26Z" duration-ms="5540" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.atmecs.demoblaze.VerifyCartTest@6156496]" started-at="2020-09-29T01:54:03Z" name="beforeMethod" finished-at="2020-09-29T01:54:19Z" duration-ms="15816" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="verifyCartTest()[pri:0, instance:com.atmecs.demoblaze.VerifyCartTest@7c417213]" started-at="2020-09-25T09:09:26Z" name="verifyCartTest" finished-at="2020-09-25T09:09:28Z" duration-ms="2198" status="PASS">
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyCartTest()[pri:0, instance:com.atmecs.demoblaze.VerifyCartTest@6156496]" started-at="2020-09-29T01:54:19Z" name="verifyCartTest" finished-at="2020-09-29T01:54:21Z" duration-ms="1480" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCartTest -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.atmecs.demoblaze.VerifyCartTest@7c417213]" started-at="2020-09-25T09:09:28Z" name="afterTest" finished-at="2020-09-25T09:09:29Z" duration-ms="217" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.atmecs.demoblaze.VerifyCartTest@6156496]" started-at="2020-09-29T01:54:21Z" name="afterMethod" finished-at="2020-09-29T01:54:21Z" duration-ms="742" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterTest -->
+        </test-method> <!-- afterMethod -->
       </class> <!-- com.atmecs.demoblaze.VerifyCartTest -->
-      <class name="com.atmecs.demoblaze.LogInTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.atmecs.demoblaze.LogInTest@2b6856dd]" started-at="2020-09-25T09:08:49Z" name="beforeTest" finished-at="2020-09-25T09:08:57Z" duration-ms="7960" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="logInTest()[pri:0, instance:com.atmecs.demoblaze.LogInTest@2b6856dd]" started-at="2020-09-25T09:08:57Z" name="logInTest" finished-at="2020-09-25T09:08:58Z" duration-ms="580" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logInTest -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.atmecs.demoblaze.LogInTest@2b6856dd]" started-at="2020-09-25T09:08:58Z" name="afterTest" finished-at="2020-09-25T09:08:58Z" duration-ms="270" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- com.atmecs.demoblaze.LogInTest -->
-      <class name="com.atmecs.demoblaze.AddToCartTest">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.atmecs.demoblaze.AddToCartTest@6107227e]" started-at="2020-09-25T09:09:12Z" name="beforeTest" finished-at="2020-09-25T09:09:17Z" duration-ms="5524" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="addToCart()[pri:0, instance:com.atmecs.demoblaze.AddToCartTest@6107227e]" started-at="2020-09-25T09:09:17Z" name="addToCart" finished-at="2020-09-25T09:09:21Z" duration-ms="3109" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addToCart -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.atmecs.demoblaze.AddToCartTest@6107227e]" started-at="2020-09-25T09:09:21Z" name="afterTest" finished-at="2020-09-25T09:09:21Z" duration-ms="157" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- com.atmecs.demoblaze.AddToCartTest -->
-    </test> <!-- SignUp -->
-  </suite> <!-- DemoBlaze -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

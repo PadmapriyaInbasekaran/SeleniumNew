@@ -9,7 +9,7 @@ import com.atmecs.chatbox.constants.Constants;
 import com.atmecs.chatbox.pagehelper.HelperClass;
 import com.atmecs.chatbox.utilitiesfile.*;
 
-public class PageHelper extends UtilitiesClass {
+public class PageHelper  {
 	public WebDriver driver;
 	Properties Location_path,Data_path;
 	public PageHelper(WebDriver driver)

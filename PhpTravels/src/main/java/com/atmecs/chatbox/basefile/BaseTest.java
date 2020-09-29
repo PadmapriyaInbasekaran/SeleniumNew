@@ -7,7 +7,7 @@ import org.testng.annotations.BeforeTest;
 
 import com.atmecs.chatbox.constants.Constants;
 
-public class BaseTest extends Constants{
+public class BaseTest {
 	public  WebDriver driver;
 
 	@BeforeTest
@@ -15,7 +15,7 @@ public class BaseTest extends Constants{
 	{
 		System.out.println("TEST EXECUTION BEGINS...");
 
-		String chromeDriverPath = System.setProperty("user.dir",  CHROME_FILE);
+		String chromeDriverPath = System.setProperty("user.dir", Constants.CHROME_FILE);
 		System.out.println("BaseFile " +chromeDriverPath);
 		driver=new ChromeDriver();
 		driver.navigate().to("https://www.phptravels.com/");   
