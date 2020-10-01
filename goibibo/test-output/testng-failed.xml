@@ -7,13 +7,13 @@
         <methods>
           <include name="beforeTest"/>
           <include name="afterTest"/>
-          <include name="bookingTest"/>
+          <include name="bookingTest" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- com.atmecs.goibibo.BookingTest -->
       <class name="com.atmecs.goibibo.SignUpTest">
         <methods>
           <include name="beforeTest"/>
-          <include name="signUpTest"/>
+          <include name="signUpTest" invocation-numbers="1"/>
           <include name="afterTest"/>
         </methods>
       </class> <!-- com.atmecs.goibibo.SignUpTest -->

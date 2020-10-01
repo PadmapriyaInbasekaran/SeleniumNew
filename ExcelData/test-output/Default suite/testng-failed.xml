@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.atmecs.exceldata.ReadExcelSheet">
+      <class name="com.atmecs.exceldata.ExcelTest">
         <methods>
-          <include name="readExcelSheet"/>
+          <include name="ReadData"/>
           <include name="beforeTest"/>
           <include name="afterTest"/>
         </methods>
-      </class> <!-- com.atmecs.exceldata.ReadExcelSheet -->
+      </class> <!-- com.atmecs.exceldata.ExcelTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

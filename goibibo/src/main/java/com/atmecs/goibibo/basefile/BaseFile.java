@@ -2,13 +2,15 @@ package com.atmecs.goibibo.basefile;
 import java.io.IOException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import com.atmecs.goibibo.constants.Constants;
 
 public class BaseFile extends Constants{
 	public WebDriver driver;
-   @BeforeTest
+   @BeforeMethod
 	public void beforeTest() throws InterruptedException, IOException
 	{
 		System.out.println("TEST EXECUTION BEGINS...");
@@ -21,7 +23,7 @@ public class BaseFile extends Constants{
 		
 		
 	}
-		@AfterTest
+		@AfterMethod
 	public void afterTest() 
 	{
 		driver.quit();

@@ -5,7 +5,7 @@
     <classes>
       <class name="com.atmecs.exceldata.ExcelData">
         <methods>
-          <include name="ReadData"/>
+          <include name="ReadData" invocation-numbers="0 1"/>
           <include name="beforeTest"/>
           <include name="afterTest"/>
         </methods>
