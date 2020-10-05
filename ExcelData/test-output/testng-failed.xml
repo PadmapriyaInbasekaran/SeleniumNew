@@ -6,23 +6,11 @@
     <classes>
       <class name="com.atmecs.exceldata.ExcelTest">
         <methods>
-          <include name="ReadData"/>
+          <include name="ReadData" invocation-numbers="0"/>
           <include name="beforeTest"/>
           <include name="afterTest"/>
         </methods>
       </class> <!-- com.atmecs.exceldata.ExcelTest -->
     </classes>
   </test> <!-- FireFoxTest(failed) -->
-  <test thread-count="2" parallel="tests" name="ChromeTest(failed)">
-    <parameter name="browser" value="Chrome"/>
-    <classes>
-      <class name="com.atmecs.exceldata.ExcelTest">
-        <methods>
-          <include name="ReadData"/>
-          <include name="beforeTest"/>
-          <include name="afterTest"/>
-        </methods>
-      </class> <!-- com.atmecs.exceldata.ExcelTest -->
-    </classes>
-  </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->
