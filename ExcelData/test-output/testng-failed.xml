@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="2" parallel="tests" name="Failed suite [TestSuite]" guice-stage="DEVELOPMENT">
-  <test thread-count="2" parallel="tests" name="FireFoxTest(failed)">
-    <parameter name="browser" value="Firefox"/>
+  <test thread-count="2" parallel="tests" name="IeTest(failed)">
+    <parameter name="browser" value="Explorer"/>
     <classes>
       <class name="com.atmecs.exceldata.ExcelTest">
         <methods>
-          <include name="ReadData" invocation-numbers="0"/>
+          <include name="ReadData"/>
           <include name="beforeTest"/>
           <include name="afterTest"/>
         </methods>
       </class> <!-- com.atmecs.exceldata.ExcelTest -->
     </classes>
-  </test> <!-- FireFoxTest(failed) -->
+  </test> <!-- IeTest(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->

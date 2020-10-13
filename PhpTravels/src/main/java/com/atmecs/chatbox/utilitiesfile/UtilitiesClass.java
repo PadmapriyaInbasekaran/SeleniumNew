@@ -4,7 +4,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
-import com.atmecs.chatbox.constants.Constants;
+
 
 public class UtilitiesClass {
 	public static Properties properties;

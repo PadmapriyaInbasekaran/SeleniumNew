@@ -6,5 +6,6 @@ public class Constants {
 	public static final String LOCATORS_FILE = System.getProperty("user.dir")+"\\src\\main\\resources\\locators.properties";
 	public static final String DATA_FILE = System.getProperty("user.dir")+"\\src\\main\\resources\\data.properties";
 	public static final String TEST_FILE = System.getProperty("user.dir")+"\\src\\test\\resources\\Testdata.xlsx";
-
+	public static final String EDGE_FILE = System.getProperty("user.dir")+"\\lib\\msedgedriver.exe";
+//	public static final String EXPLORER_FILE = System.getProperty("user.dir")+"\\lib\\IEDriver.exe";
 }

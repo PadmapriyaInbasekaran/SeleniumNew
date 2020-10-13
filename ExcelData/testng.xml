@@ -15,6 +15,20 @@
 </class>
 </classes>
 </test>
+<test name="MsEdgeTest">
+<parameter name="browser" value="Edge" />
+<classes>
+<class name="com.atmecs.exceldata.ExcelTest">
+</class>
+</classes>
+</test>
+<!--  <test name="IeTest">
+<parameter name="browser" value="Explorer" />
+<classes>
+<class name="com.atmecs.exceldata.ExcelTest">
+</class>
+</classes>
+</test>  -->
 </suite> 
 
 

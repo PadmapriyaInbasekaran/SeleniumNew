@@ -1,163 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-10-03T06:54:06Z" name="TestSuite" finished-at="2020-10-03T06:56:03Z" duration-ms="116454">
+  <suite started-at="2020-10-07T08:41:59Z" name="TestSuite" finished-at="2020-10-07T08:46:19Z" duration-ms="260132">
     <groups>
     </groups>
-    <test started-at="2020-10-03T06:54:06Z" name="FireFoxTest" finished-at="2020-10-03T06:55:51Z" duration-ms="104606">
+    <test started-at="2020-10-07T08:41:59Z" name="ChromeTest" finished-at="2020-10-07T08:44:13Z" duration-ms="134170">
       <class name="com.atmecs.exceldata.ExcelTest">
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.atmecs.exceldata.ExcelTest@2e3967ea]" started-at="2020-10-03T06:54:06Z" name="beforeTest" finished-at="2020-10-03T06:54:22Z" duration-ms="15687" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="ReadData(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.exceldata.ExcelTest@2e3967ea]" started-at="2020-10-03T06:54:22Z" name="ReadData" data-provider="Data" finished-at="2020-10-03T06:54:45Z" duration-ms="23189" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Padmapriya Inba]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[234533456]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[abc@gmail.com]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Unable to locate element: //div[@aria-label='Open LiveChat chat widget']
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ATMECSBLRLT-036', ip: '192.168.43.99', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200917005511, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 56552, moz:profile: C:\Users\padmapriya.i\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7953bde5-812e-4482-89d7-382de3eddaf5
-*** Element info: {Using=xpath, value=//div[@aria-label='Open LiveChat chat widget']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //div[@aria-label='Open LiveChat chat widget']
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ATMECSBLRLT-036', ip: '192.168.43.99', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 81.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200917005511, moz:geckodriverVersion: 0.27.0, moz:headless: false, moz:processID: 56552, moz:profile: C:\Users\padmapriya.i\AppDa..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7953bde5-812e-4482-89d7-382de3eddaf5
-*** Element info: {Using=xpath, value=//div[@aria-label='Open LiveChat chat widget']}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at com.atmecs.chatbox.pagehelper.HelperClass.chatIconMethod(HelperClass.java:58)
-at com.atmecs.exceldata.ExcelTest.ReadData(ExcelTest.java:28)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:835)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ReadData -->
-        <test-method is-config="true" signature="afterTest(org.testng.ITestResult)[pri:0, instance:com.atmecs.exceldata.ExcelTest@2e3967ea]" started-at="2020-10-03T06:54:45Z" name="afterTest" finished-at="2020-10-03T06:54:49Z" duration-ms="4123" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=ReadData status=FAILURE method=ExcelTest.ReadData(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.exceldata.ExcelTest@2e3967ea] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.atmecs.exceldata.ExcelTest@2e3967ea]" started-at="2020-10-03T06:54:49Z" name="beforeTest" finished-at="2020-10-03T06:55:00Z" duration-ms="10205" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method signature="ReadData(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.exceldata.ExcelTest@2e3967ea]" started-at="2020-10-03T06:55:00Z" name="ReadData" data-provider="Data" finished-at="2020-10-03T06:55:49Z" duration-ms="48912" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Abc]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123456678]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[xyz@gmail.com]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ReadData -->
-        <test-method is-config="true" signature="afterTest(org.testng.ITestResult)[pri:0, instance:com.atmecs.exceldata.ExcelTest@2e3967ea]" started-at="2020-10-03T06:55:49Z" name="afterTest" finished-at="2020-10-03T06:55:51Z" duration-ms="2215" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=ReadData status=SUCCESS method=ExcelTest.ReadData(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.exceldata.ExcelTest@2e3967ea] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- com.atmecs.exceldata.ExcelTest -->
-    </test> <!-- FireFoxTest -->
-    <test started-at="2020-10-03T06:54:06Z" name="ChromeTest" finished-at="2020-10-03T06:56:03Z" duration-ms="116454">
-      <class name="com.atmecs.exceldata.ExcelTest">
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.atmecs.exceldata.ExcelTest@4310d43]" started-at="2020-10-03T06:54:06Z" name="beforeTest" finished-at="2020-10-03T06:54:14Z" duration-ms="7717" status="PASS">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.atmecs.exceldata.ExcelTest@4310d43]" started-at="2020-10-07T08:42:00Z" name="beforeTest" finished-at="2020-10-07T08:42:19Z" duration-ms="18916" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -168,7 +18,7 @@ at java.base/java.lang.Thread.run(Thread.java:835)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="ReadData(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.exceldata.ExcelTest@4310d43]" started-at="2020-10-03T06:54:14Z" name="ReadData" data-provider="Data" finished-at="2020-10-03T06:55:03Z" duration-ms="48817" status="PASS">
+        <test-method signature="ReadData(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.exceldata.ExcelTest@4310d43]" started-at="2020-10-07T08:42:19Z" name="ReadData" data-provider="Data" finished-at="2020-10-07T08:43:12Z" duration-ms="53371" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -189,7 +39,7 @@ at java.base/java.lang.Thread.run(Thread.java:835)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ReadData -->
-        <test-method is-config="true" signature="afterTest(org.testng.ITestResult)[pri:0, instance:com.atmecs.exceldata.ExcelTest@4310d43]" started-at="2020-10-03T06:55:03Z" name="afterTest" finished-at="2020-10-03T06:55:05Z" duration-ms="1787" status="PASS">
+        <test-method is-config="true" signature="afterTest(org.testng.ITestResult)[pri:0, instance:com.atmecs.exceldata.ExcelTest@4310d43]" started-at="2020-10-07T08:43:12Z" name="afterTest" finished-at="2020-10-07T08:43:16Z" duration-ms="3375" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -200,7 +50,7 @@ at java.base/java.lang.Thread.run(Thread.java:835)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.atmecs.exceldata.ExcelTest@4310d43]" started-at="2020-10-03T06:55:05Z" name="beforeTest" finished-at="2020-10-03T06:55:12Z" duration-ms="7516" status="PASS">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.atmecs.exceldata.ExcelTest@4310d43]" started-at="2020-10-07T08:43:16Z" name="beforeTest" finished-at="2020-10-07T08:43:24Z" duration-ms="8312" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -211,7 +61,7 @@ at java.base/java.lang.Thread.run(Thread.java:835)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="ReadData(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.exceldata.ExcelTest@4310d43]" started-at="2020-10-03T06:55:12Z" name="ReadData" data-provider="Data" finished-at="2020-10-03T06:56:01Z" duration-ms="48693" status="PASS">
+        <test-method signature="ReadData(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.exceldata.ExcelTest@4310d43]" started-at="2020-10-07T08:43:24Z" name="ReadData" data-provider="Data" finished-at="2020-10-07T08:44:12Z" duration-ms="48434" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -232,7 +82,7 @@ at java.base/java.lang.Thread.run(Thread.java:835)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ReadData -->
-        <test-method is-config="true" signature="afterTest(org.testng.ITestResult)[pri:0, instance:com.atmecs.exceldata.ExcelTest@4310d43]" started-at="2020-10-03T06:56:01Z" name="afterTest" finished-at="2020-10-03T06:56:03Z" duration-ms="1656" status="PASS">
+        <test-method is-config="true" signature="afterTest(org.testng.ITestResult)[pri:0, instance:com.atmecs.exceldata.ExcelTest@4310d43]" started-at="2020-10-07T08:44:12Z" name="afterTest" finished-at="2020-10-07T08:44:13Z" duration-ms="1123" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -245,5 +95,185 @@ at java.base/java.lang.Thread.run(Thread.java:835)
         </test-method> <!-- afterTest -->
       </class> <!-- com.atmecs.exceldata.ExcelTest -->
     </test> <!-- ChromeTest -->
+    <test started-at="2020-10-07T08:41:59Z" name="FireFoxTest" finished-at="2020-10-07T08:44:29Z" duration-ms="149305">
+      <class name="com.atmecs.exceldata.ExcelTest">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.atmecs.exceldata.ExcelTest@2e3967ea]" started-at="2020-10-07T08:42:00Z" name="beforeTest" finished-at="2020-10-07T08:42:30Z" duration-ms="29722" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="ReadData(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.exceldata.ExcelTest@2e3967ea]" started-at="2020-10-07T08:42:30Z" name="ReadData" data-provider="Data" finished-at="2020-10-07T08:43:23Z" duration-ms="52908" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Padmapriya Inba]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[234533456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[abc@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReadData -->
+        <test-method is-config="true" signature="afterTest(org.testng.ITestResult)[pri:0, instance:com.atmecs.exceldata.ExcelTest@2e3967ea]" started-at="2020-10-07T08:43:23Z" name="afterTest" finished-at="2020-10-07T08:43:25Z" duration-ms="2608" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ReadData status=SUCCESS method=ExcelTest.ReadData(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.exceldata.ExcelTest@2e3967ea] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.atmecs.exceldata.ExcelTest@2e3967ea]" started-at="2020-10-07T08:43:25Z" name="beforeTest" finished-at="2020-10-07T08:43:36Z" duration-ms="11142" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="ReadData(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.exceldata.ExcelTest@2e3967ea]" started-at="2020-10-07T08:43:36Z" name="ReadData" data-provider="Data" finished-at="2020-10-07T08:44:25Z" duration-ms="48951" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Abc]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456678]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[xyz@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReadData -->
+        <test-method is-config="true" signature="afterTest(org.testng.ITestResult)[pri:0, instance:com.atmecs.exceldata.ExcelTest@2e3967ea]" started-at="2020-10-07T08:44:25Z" name="afterTest" finished-at="2020-10-07T08:44:29Z" duration-ms="3337" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ReadData status=SUCCESS method=ExcelTest.ReadData(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.exceldata.ExcelTest@2e3967ea] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.atmecs.exceldata.ExcelTest -->
+    </test> <!-- FireFoxTest -->
+    <test started-at="2020-10-07T08:44:14Z" name="MsEdgeTest" finished-at="2020-10-07T08:46:19Z" duration-ms="125847">
+      <class name="com.atmecs.exceldata.ExcelTest">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.atmecs.exceldata.ExcelTest@6221a451]" started-at="2020-10-07T08:44:14Z" name="beforeTest" finished-at="2020-10-07T08:44:32Z" duration-ms="18260" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="ReadData(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.exceldata.ExcelTest@6221a451]" started-at="2020-10-07T08:44:32Z" name="ReadData" data-provider="Data" finished-at="2020-10-07T08:45:20Z" duration-ms="48472" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Padmapriya Inba]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[234533456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[abc@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReadData -->
+        <test-method is-config="true" signature="afterTest(org.testng.ITestResult)[pri:0, instance:com.atmecs.exceldata.ExcelTest@6221a451]" started-at="2020-10-07T08:45:20Z" name="afterTest" finished-at="2020-10-07T08:45:21Z" duration-ms="1201" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ReadData status=SUCCESS method=ExcelTest.ReadData(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.exceldata.ExcelTest@6221a451] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.atmecs.exceldata.ExcelTest@6221a451]" started-at="2020-10-07T08:45:21Z" name="beforeTest" finished-at="2020-10-07T08:45:30Z" duration-ms="8012" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="ReadData(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.exceldata.ExcelTest@6221a451]" started-at="2020-10-07T08:45:30Z" name="ReadData" data-provider="Data" finished-at="2020-10-07T08:46:18Z" duration-ms="48787" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Abc]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456678]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[xyz@gmail.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ReadData -->
+        <test-method is-config="true" signature="afterTest(org.testng.ITestResult)[pri:0, instance:com.atmecs.exceldata.ExcelTest@6221a451]" started-at="2020-10-07T08:46:18Z" name="afterTest" finished-at="2020-10-07T08:46:19Z" duration-ms="1087" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ReadData status=SUCCESS method=ExcelTest.ReadData(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.exceldata.ExcelTest@6221a451] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.atmecs.exceldata.ExcelTest -->
+    </test> <!-- MsEdgeTest -->
   </suite> <!-- TestSuite -->
 </testng-results>

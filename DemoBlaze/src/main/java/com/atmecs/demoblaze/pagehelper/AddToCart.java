@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.atmecs.demoblaze.constants.Constants;
 import com.atmecs.demoblaze.helperclass.DemoBlazeHelperClass;
 import com.atmecs.demoblaze.utilityclass.UtilityClass;
-public class AddToCart extends UtilityClass{
+public class AddToCart {
 	public WebDriver driver;
 	Properties Location_path,Data_path;
 	public AddToCart(WebDriver driver)
