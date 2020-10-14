@@ -3,7 +3,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
-
 public class PostRequest {
 	public JSONObject response;
 	public JSONObject emp;
@@ -11,11 +10,9 @@ public class PostRequest {
 	public JSONObject  getEmp(int id, String firstName, String lastName, String email){
 		emp	 = new JSONObject();
 		emp .put("Id", id);
-		//System.out.println("Employee 2 :"+emp.get(id));
 		emp .put("FirstName", firstName);
 		emp .put("LastName", lastName);
 		emp .put("Email", email);
-		// System.out.println(emp);
 		return emp;
 	} 
 
@@ -24,7 +21,6 @@ public class PostRequest {
 
 		JSONArray employees = new JSONArray();
 		employees.add(getEmp(1,"Abc","123","abc@gmail.com"));
-		//    System.out.println("Employee 2 :"+id);
 		employees.add(getEmp(2,"xyz","456","xyz@gmail.com"));
 		employees.add(getEmp(3,"pqr","789","pqr@gmail.com"));
 		employees.add(getEmp(4,"Priya","Sekar","priya@gmail.com"));
