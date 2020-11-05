@@ -17,7 +17,7 @@ public class PostRequest {
 	} 
 
 	@SuppressWarnings("unchecked")
-	public JSONObject getJsonResponse(){
+	public void getJsonResponse(){
 
 		JSONArray employees = new JSONArray();
 		employees.add(getEmp(1,"Abc","123","abc@gmail.com"));
@@ -43,6 +43,6 @@ public class PostRequest {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return response;
+		
 	}
 }

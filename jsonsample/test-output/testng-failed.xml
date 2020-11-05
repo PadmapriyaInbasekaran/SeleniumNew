@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.atmecs.jsonsample.TestClass">
+      <class name="com.atmecs.jsonsample.getrequest.GetUsingJson">
         <methods>
-          <include name="testClass"/>
+          <include name="getUsingJson"/>
         </methods>
-      </class> <!-- com.atmecs.jsonsample.TestClass -->
+      </class> <!-- com.atmecs.jsonsample.getrequest.GetUsingJson -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
